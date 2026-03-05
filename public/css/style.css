@@ -1,9 +1,10 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif!important;
-  font-size: 1.2rem!important;
+  font-size: 1.3rem!important;
     display: flex!important;
   flex-direction: column!important;
   min-height: 100vh!important;
+  background: linear-gradient(to bottom, #f2ecf8, #e4d9e9)!important; 
 }
 
 .container{
@@ -72,6 +73,7 @@ cards */
     display: flex!important;
     align-items: flex-start!important;
     justify-content: space-evenly!important;
+     background-color: linear-gradient(to right, #c7d0f3, #d294be); 
     /* width: 20rem!important; */
 }
 
@@ -84,10 +86,11 @@ cards */
 }
 
 .card-img-top{
- border-radius: 1rem!important;   
- width: 100%!important;
- object-fit:cover!important; 
- height: 25rem!important;
+   
+  width: 100%!important;
+  object-fit: cover !important;   /* ✅ shows full image */
+  background: #000;                 /* optional */
+  height: 25rem!important;
 }
 .card-body{
     padding: 0 !important;

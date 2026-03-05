@@ -33,7 +33,7 @@ async function main() {
     } catch (err) {
         console.error("MongoDB connection error:", err);
     }
-}
+}   
 main();
 
 // ----- Express + View Engine -----

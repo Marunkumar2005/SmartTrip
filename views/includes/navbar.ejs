@@ -1,6 +1,6 @@
 <style>
 #input-form {
-  border-radius: 25px;
+  
   padding: 0.6rem 1rem;
   width: 20rem;
   border: 1px solid #ccc;
@@ -14,9 +14,9 @@
 }
 
 .btn-search {
-  background-color: #fe4293;
+  background-color: #4784ae;
   color: white;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 0.55rem 0.5rem;
   font-weight: 500;
  
@@ -24,7 +24,7 @@
 }
 
 .btn-search:hover {
-  background-color: #fe42e2;
+  background-color: #b38bee;
   color: white;
 }
 
@@ -52,6 +52,9 @@
     color: #222 !important;
     width: 100%;
     padding: 0.6rem 0;
+  }
+  .nav-link:hover{
+    background-color: #87aac1;
   }
 
   /* search form full width and stacked */
@@ -86,7 +89,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
 
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/listings">Explore Places</a>
 
       </div>
 
@@ -97,7 +100,7 @@
         </form>
       </div>
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Airbnb your home </a>
+        <a class="nav-link" style="background-color: #6e61d8; border-radius: 3px;"href="/listings/new">Add NEW Place</a>
 
         <%if(!currUser){%>
           <a class="nav-link" href="/signup"><b>SignUp</b></a>
