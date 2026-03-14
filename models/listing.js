@@ -29,7 +29,10 @@ const listingSchema = new Schema({
   //   }
   // },
   price: Number,
-  location: String,
+  location: {
+  type: String,
+  required: true
+},
   country: String,
   reviews:
     [{

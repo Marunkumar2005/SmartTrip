@@ -22,9 +22,11 @@ router.route("/:id")
     .put(isLoggedIn, isOwner,  upload.single('listing[image]'),validateListing, listingController.updateListing)
     .delete(isLoggedIn, isOwner, listingController.destroyListing);
 
+
 //edit route
 
 router.get("/:id/edit", isLoggedIn, isOwner, listingController.rederEditForm)
-
+ 
+router.get("/search", wrapAsync(listingController.searchListings));
 
 module.exports = router;
